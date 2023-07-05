@@ -8,10 +8,13 @@
 #include <boost/bind.hpp>
 #include <boost/algorithm/string.hpp>
 #include <openssl/sha.h>
+#include <iomanip>
 
 #define MAX_BUFFER_SIZE 1024
 
 using boost::asio::ip::tcp;
+
+class UserCredentialsManager;
 
 class Server {
 public:
